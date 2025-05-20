@@ -1,0 +1,44 @@
+{
+  "name": "nextpay",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start-user-app": "cd ./apps/user-app && npm run start",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "^20.12.12",
+    "esbuild": "^0.21.4",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "prisma": "^5.14.0",
+    "ts-node": "^10.9.2",
+    "turbo": "latest",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@headlessui/react": "^2.0.3",
+    "@prisma/client": "^5.14.0",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "chart.js": "^4.4.3",
+    "date-fns": "^3.6.0",
+    "headlessui": "^0.0.0",
+    "lucide-react": "^0.378.0",
+    "react-apexcharts": "^1.4.1",
+    "react-chartjs-2": "^5.2.0"
+  }
+}
